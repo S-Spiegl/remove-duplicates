@@ -11,6 +11,6 @@ describe('removeDuplicates', () => {
     expect(removeDuplicates([3,1,2,1])).toEqual([3,2,1])
   })
   it('sorts list in descending order following removal of duplicates (10 numbers as per instructions)', () => {
-    expect(removeDuplicates([3,10,2,1,40,99,100,84,11,42])).toEqual([100,99,84,42,40,11,10,3,2,1])
+    expect(removeDuplicates([3,10,2,11,42,99,100,84,11,42])).toEqual([100,99,84,42,11,10,3,2])
   })
 })
