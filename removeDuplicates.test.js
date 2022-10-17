@@ -10,4 +10,7 @@ describe('removeDuplicates', () => {
   it('sorts list following removal of duplicates', () => {
     expect(removeDuplicates([3,1,2,1])).toEqual([1,2,3])
   })
+  it('sorts list following removal of duplicates (10 numbers as per instructions)', () => {
+    expect(removeDuplicates([3,10,2,1,40,99,100,84,11,42])).toEqual([1,2,3,10,11,40,42,84,99,100])
+  })
 })
