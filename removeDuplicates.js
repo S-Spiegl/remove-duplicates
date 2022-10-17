@@ -3,10 +3,9 @@
 function removeDuplicates(array) {
   const uniqueNumbers = []
   array.forEach((number) => {
-    if(!uniqueNumbers.includes(number)){
-      uniqueNumbers.push(number)
-    }
+    !uniqueNumbers.includes(number) && uniqueNumbers.push(number)
   })
+  
   return uniqueNumbers.sort(function(a,b){return b - a})
 }
 
