@@ -13,4 +13,7 @@ describe('removeDuplicates', () => {
   it('sorts list in descending order following removal of duplicates (10 numbers as per instructions)', () => {
     expect(removeDuplicates([3,10,2,11,42,99,100,84,11,42])).toEqual([100,99,84,42,11,10,3,2])
   })
+  it('sorts list in descending order following removal of duplicates (10 numbers and 4 duplicates as per instructions)', () => {
+    expect(removeDuplicates([3,84,3,11,42,99,100,84,11,42])).toEqual([100,99,84,42,11,3])
+  })
 })
