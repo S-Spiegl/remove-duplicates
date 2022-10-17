@@ -7,7 +7,7 @@ function removeDuplicates(array) {
       uniqueNumbers.push(number)
     }
   })
-  return uniqueNumbers
+  return uniqueNumbers.sort(function(a,b){return a - b})
 }
 
 module.exports = removeDuplicates;
